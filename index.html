@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Cajas 2</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .contenedor-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .imagen-flotante {
+            width: 180px; 
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 992px) {
+            .imagen-flotante {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .imagen-flotante {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .imagen-flotante {
+                width: calc(50% - 20px);
+                height: auto;
+                max-height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor-galeria">
+        <img src="./img/30.jpg" alt="Imagen 1" class="imagen-flotante">
+        <img src="./img/31.jpg" alt="Imagen 2" class="imagen-flotante">
+        <img src="./img/32.jpg" alt="Imagen 3" class="imagen-flotante">
+        <img src="./img/33.jpg" alt="Imagen 4" class="imagen-flotante">
+        <img src="./img/34.jpg" alt="Imagen 5" class="imagen-flotante">
+        <img src="./img/35.jpg" alt="Imagen 6" class="imagen-flotante">
+        <img src="./img/36.jpg" alt="Imagen 7" class="imagen-flotante">
+        <img src="./img/37.jpg" alt="Imagen 8" class="imagen-flotante">
+        <img src="./img/38.jpg" alt="Imagen 9" class="imagen-flotante">
+        <img src="./img/39.jpg" alt="Imagen 10" class="imagen-flotante">
+        <img src="./img/40.jpg" alt="Imagen 11" class="imagen-flotante">
+    </div>
+    
+</body>
+</html>
